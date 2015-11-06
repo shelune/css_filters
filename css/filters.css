@@ -13,12 +13,19 @@
     z-index: 1;
 }
 
+.defs-only {
+    position: absolute;
+    height: 0; width: 0;
+    overflow: none;
+    left: -100%;
+}
+
 .filter--inkwell:hover {
     -webkit-filter: sepia(0.3) contrast(1.1) brightness(1.1) grayscale(1);
     filter: sepia(0.3) contrast(1.1) brightness(1.1) grayscale(1);
 }
 
-.filter--amaro:hover::after {
+/* .filter--amaro:hover::before {
     position: absolute;
     content: '';
     height: 100%;
@@ -33,5 +40,9 @@
 
 .filter--amaro:hover {
     -webkit-filter: brightness(1.4) contrast(1.12);
+} */
 
+.filter--amaro:hover img {
+    -webkit-filter: url(../assets/filter-yellow.svg#duotone);
+    filter: url("../assets/filter-yellow.svg#duotone");
 }
