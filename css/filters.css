@@ -31,8 +31,8 @@
 /* AMARO */
 
 .filter--amaro img {
-    -webkit-filter: url(../assets/filter-amaro.svg#amaro);
-    filter: url("../assets/filter-amaro.svg#amaro");
+    -webkit-filter: url(../assets/filters.svg#amaro);
+    filter: url("../assets/filters.svg#amaro");
 }
 
 .filter--amaro::before {
@@ -74,3 +74,29 @@
     opacity: 0.6;
 }
 
+
+/* Hudson */
+
+.filter--hudson {
+    -webkit-filter: brightness(1.4) contrast (0.8);
+    filter: brightness(1.4) contrast (0.8);
+}
+
+.filter--hudson img {
+    -webkit-filter: url(../assets/filters.svg#hudson);
+    filter: url("../assets/filters.svg#hudson");
+}
+
+.filter--hudson::before {
+    background: -webkit-radial-gradient(circle, rgb(73, 94, 148) 50%, rgba(72, 0, 3, 0.6));
+    background: radial-gradient(circle, rgb(73, 94, 148) 50%, rgba(72, 0, 3, 0.6));
+    mix-blend-mode: overlay;
+    opacity: 0.6;
+}
+
+.filter--hudson::after {
+    background: -webkit-linear-gradient(bottom, rgba(60, 5, 5, 0.8), rgba(58, 73, 119, 0.7));
+    background: linear-gradient(to top, rgba(60, 5, 5, 0.8), rgba(58, 73, 119, 0.7));
+    mix-blend-mode: screen;
+    opacity: 0.4;
+}
