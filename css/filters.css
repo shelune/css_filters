@@ -1,3 +1,5 @@
+/* GENERAL STUFF */
+
 .filter {
     position: relative;
 }
@@ -20,31 +22,55 @@
     left: -100%;
 }
 
-.filter--inkwell:hover {
+/* INKWELL */
+.filter--inkwell {
     -webkit-filter: sepia(0.3) contrast(1.1) brightness(1.1) grayscale(1);
     filter: sepia(0.3) contrast(1.1) brightness(1.1) grayscale(1);
 }
 
-.filter--amaro:hover img {
-    -webkit-filter: url(../assets/filter-amaro.svg#duotone);
-    filter: url("../assets/filter-amaro.svg#duotone");
+/* AMARO */
+
+.filter--amaro img {
+    -webkit-filter: url(../assets/filter-amaro.svg#amaro);
+    filter: url("../assets/filter-amaro.svg#amaro");
 }
 
-.filter--amaro:hover::before {
+.filter--amaro::before {
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.1), rgba(255, 255, 102, 0.3) 65%, rgba(0, 0, 0, 0.1));
     background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(255, 255, 102, 0.3) 65%, rgba(0, 0, 0, 0.1));
     mix-blend-mode: overlay;
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
-.filter--amaro:hover::after {
-    background: radial-gradient(circle at center, transparent 60%, rgba(51, 0, 102, 0.8));
-    filter: contrast(1.4);
+.filter--amaro::after {
+    background-image: -webkit-radial-gradient(circle, transparent 60%, rgba(51, 0, 102, 0.8));
+    background-image: radial-gradient(circle, transparent 60%, rgba(51, 0, 102, 0.8));
     mix-blend-mode: multiply;
+    opacity: 0.7;
+}
+
+.filter--amaro {
+    -webkit-filter: brightness(1) contrast(1.2);
+    filter: brightness(1) contrast(1.2);
+}
+
+/* WALDEN */
+
+.filter--walden {
+    -webkit-filter: brightness(1.2) contrast(1.4);
+    filter: brightness(1.2) contrast(1.4);
+}
+
+.filter--walden::before {
+    background: #002b54;
+    mix-blend-mode: lighten;
     opacity: 0.8;
 }
 
-
-.filter--amaro:hover {
-    -webkit-filter: brightness(1.4) contrast(1.12);
-    filter: brightness(1.4) contrast(1.12);
+.filter--walden::after {
+    background: -webkit-radial-gradient(circle, rgba(255, 255, 255, 0.8), rgba(0, 53, 102, 0.3));
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.8), rgba(0, 53, 102, 0.3));
+    mix-blend-mode: overlay;
+    opacity: 0.6;
 }
+
