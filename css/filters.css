@@ -75,7 +75,7 @@
 }
 
 
-/* Hudson */
+/* HUDSON */
 
 .filter--hudson {
     -webkit-filter: brightness(1.4) contrast (0.8);
@@ -123,3 +123,45 @@
     mix-blend-mode: overlay;
     opacity: 0.75;
 }
+
+/* EARLYBIRD */
+
+.filter--earlybird {
+    -webkit-filter: brightness(1.1) contrast(0.9) sepia(0.2);
+    filter: brightness(1.1) contrast(0.9) sepia(0.2);
+}
+
+.filter--earlybird::before {
+    background: -webkit-radial-gradient(circle, rgb(255, 231, 187) 30%, rgb(57, 5, 5) 85%, rgb(35, 8, 8) 100%);
+    background: radial-gradient(circle, rgb(255, 231, 187) 30%, rgb(57, 5, 5) 85%, rgb(35, 8, 8) 100%);
+    mix-blend-mode: overlay;
+    opacity: 0.8;
+}
+
+.filter--earlybird::after {
+    background: rgb(59, 32, 86);
+    mix-blend-mode: soft-light;
+    opacity: 0.3;
+}
+
+/* TOASTER */
+.filter--toaster {
+    -webkit-filter: contrast(1.5) brightness(0.9) saturate(120%);
+    filter: contrast(1.5) brightness(0.9) saturate(120%);
+}
+
+.filter--toaster::before {
+    background: -webkit-radial-gradient(circle, #644f2f 30%, #381227 75%, #2d0a21 100%);
+    background: radial-gradient(circle, #644f2f 30%, #381227 75%, #2d0a21 100%);
+    mix-blend-mode: screen;
+    opacity: 0.9;
+}
+
+.filter--toaster::after {
+    background: -webkit-radial-gradient(center, #644f2f 30%, rgb(57, 5, 5) 85%, rgb(35, 8, 8) 100%);
+    background: radial-gradient(center, #644f2f 30%, rgb(57, 5, 5) 85%, rgb(35, 8, 8) 100%);
+    mix-blend-mode: lighten;
+    opacity: 0.5;
+}
+
+
