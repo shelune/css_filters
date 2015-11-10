@@ -108,10 +108,6 @@
     filter: brightness(1.3) contrast(1.1) saturate(1.4);
 }
 
-.filter--1977 img {
-
-}
-
 .filter--1977::before {
     background: rgba(103, 57, 76, 1);
     mix-blend-mode: screen;
@@ -122,4 +118,22 @@
     background: linear-gradient(to top, rgb(76, 55, 52), transparent);
     mix-blend-mode: overlay;
     opacity: 0.75;
+}
+
+/* X PRO II */
+
+.filter--xproii {
+    filter: brightness(1.1) saturate(130%) sepia(0.2);
+}
+
+.filter--xproii::before {
+    background: rgb(0, 0, 102);
+    mix-blend-mode: screen;
+    opacity: 0.5;
+}
+
+.filter--xproii::after {
+    background: radial-gradient(circle, transparent 25%, #190033 95%);
+    mix-blend-mode: color-burn;
+    opacity: 0.7;
 }
