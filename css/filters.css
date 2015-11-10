@@ -120,20 +120,38 @@
     opacity: 0.75;
 }
 
-/* X PRO II */
+/* X PRO II -- furthered from origin */
 
 .filter--xproii {
     filter: brightness(1.1) saturate(130%) sepia(0.2);
 }
 
 .filter--xproii::before {
-    background: rgb(0, 0, 102);
-    mix-blend-mode: screen;
+    background: radial-gradient(circle, transparent 35%, #11116F 90%);
+    mix-blend-mode: multiply;
     opacity: 0.5;
 }
 
 .filter--xproii::after {
-    background: radial-gradient(circle, transparent 25%, #190033 95%);
+    background: -webkit-radial-gradient(circle, #E6E7E0 40%, rgba(43, 42, 161, 0.6) 110%);
+    background: radial-gradient(circle, #E6E7E0 40%, rgba(43, 42, 161, 0.6) 110%);
     mix-blend-mode: color-burn;
-    opacity: 0.7;
+}
+
+/* RISE */
+
+.filter--rise {
+    filter: brightness(1.2) contrast(0.9) saturate(90%);
+}
+
+.filter--rise::before {
+    background: #C9B75C;
+    mix-blend-mode: screen;
+    opacity: 0.2;
+}
+
+.filter--rise::after {
+    background: radial-gradient(circle, transparent 35%, #15081A 100%);
+    mix-blend-mode: hard-light;
+    opacity: 0.9;
 }
