@@ -45,8 +45,8 @@
 .filter--amaro::after {
     background-image: -webkit-radial-gradient(circle, transparent 60%, rgba(51, 0, 102, 0.8));
     background-image: radial-gradient(circle, transparent 60%, rgba(51, 0, 102, 0.8));
-    mix-blend-mode: multiply;
-    opacity: 0.7;
+    mix-blend-mode: color-burn;
+    opacity: 0.8;
 }
 
 .filter--amaro {
@@ -108,10 +108,6 @@
     filter: brightness(1.3) contrast(1.1) saturate(1.4);
 }
 
-.filter--1977 img {
-
-}
-
 .filter--1977::before {
     background: rgba(103, 57, 76, 1);
     mix-blend-mode: screen;
@@ -124,6 +120,7 @@
     opacity: 0.75;
 }
 
+<<<<<<< HEAD
 /* EARLYBIRD */
 
 .filter--earlybird {
@@ -164,4 +161,43 @@
     opacity: 0.5;
 }
 
+/* X PRO II */
 
+.filter--xproii {
+    -webkit-filter: brightness(1.1) saturate(130%) sepia(0.2);
+    filter: brightness(1.1) saturate(130%) sepia(0.2);
+}
+
+.filter--xproii::before {
+    background: rgb(0, 0, 102);
+    mix-blend-mode: screen;
+    opacity: 0.5;
+}
+
+.filter--xproii::after {
+    background: -webkit-radial-gradient(circle, transparent 25%, #190033 95%);
+    background: radial-gradient(circle, transparent 25%, #190033 95%);
+    mix-blend-mode: color-burn;
+    opacity: 0.7;
+}
+
+/* RISE */
+
+.filter--rise {
+    -webkit-filter: brightness(1.2) contrast(0.9) saturate(90%);
+    filter: brightness(1.2) contrast(0.9) saturate(90%);
+}
+
+.filter--rise::before {
+    background: -webkit-radial-gradient(circle, rgba(236, 205, 169, 0.2) 55%, #321E07 100%);
+    background: radial-gradient(circle, rgba(236, 205, 169, 0.2) 55%, #321E07 100%);
+    mix-blend-mode: multiply;
+    opacity: 0.8;
+}
+
+.filter--rise::after {
+    background: -webkit-radial-gradient(circle, rgba(246, 189, 57, 0.6), transparent 100%);
+    background: radial-gradient(circle, rgba(246, 189, 57, 0.6), transparent 100%);
+    mix-blend-mode: overlay;
+    opacity: 0.6;
+}
