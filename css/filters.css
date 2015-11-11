@@ -120,7 +120,6 @@
     opacity: 0.75;
 }
 
-<<<<<<< HEAD
 /* EARLYBIRD */
 
 .filter--earlybird {
@@ -159,6 +158,26 @@
     background: radial-gradient(center, #644f2f 30%, rgb(57, 5, 5) 85%, rgb(35, 8, 8) 100%);
     mix-blend-mode: lighten;
     opacity: 0.5;
+}
+
+/* MAYFAIR */
+
+.filter--mayfair {
+    -webkit-filter: brightness(1.2) contrast(1.1) saturate(110%);
+    filter: brightness(1.2) contrast(1.1) saturate(110%);
+}
+
+.filter--mayfair::before {
+    background: -webkit-radial-gradient(circle, rgba(247, 222, 186, 0.7), rgba(130, 54, 100, 0.5), rgb(11, 10, 17) 80%);
+    background: radial-gradient(circle, rgba(247, 222, 186, 0.7), rgba(130, 54, 100, 0.5), rgb(11, 10, 17) 80%);
+    mix-blend-mode: overlay;
+    opacity: 0.5;
+}
+
+.filter--mayfair::after {
+    background: #460B2A;
+    mix-blend-mode: overlay;
+    opacity: 0.1;
 }
 
 /* X PRO II */
