@@ -45,8 +45,8 @@
 .filter--amaro::after {
     background-image: -webkit-radial-gradient(circle, transparent 60%, rgba(51, 0, 102, 0.8));
     background-image: radial-gradient(circle, transparent 60%, rgba(51, 0, 102, 0.8));
-    mix-blend-mode: multiply;
-    opacity: 0.7;
+    mix-blend-mode: color-burn;
+    opacity: 0.8;
 }
 
 .filter--amaro {
@@ -75,7 +75,7 @@
 }
 
 
-/* Hudson */
+/* HUDSON */
 
 .filter--hudson {
     -webkit-filter: brightness(1.4) contrast (0.8);
@@ -120,9 +120,89 @@
     opacity: 0.75;
 }
 
-/* X PRO II -- furthered from origin */
+/* EARLYBIRD */
+
+.filter--earlybird {
+    -webkit-filter: brightness(1.1) contrast(0.9) sepia(0.2);
+    filter: brightness(1.1) contrast(0.9) sepia(0.2);
+}
+
+.filter--earlybird::before {
+    background: -webkit-radial-gradient(circle, rgb(255, 231, 187) 30%, rgb(57, 5, 5) 85%, rgb(35, 8, 8) 100%);
+    background: radial-gradient(circle, rgb(255, 231, 187) 30%, rgb(57, 5, 5) 85%, rgb(35, 8, 8) 100%);
+    mix-blend-mode: overlay;
+    opacity: 0.8;
+}
+
+.filter--earlybird::after {
+    background: rgb(59, 32, 86);
+    mix-blend-mode: soft-light;
+    opacity: 0.3;
+}
+
+/* TOASTER */
+
+.filter--toaster {
+    -webkit-filter: contrast(1.5) brightness(0.9) saturate(120%);
+    filter: contrast(1.5) brightness(0.9) saturate(120%);
+}
+
+.filter--toaster::before {
+    background: -webkit-radial-gradient(circle, #644f2f 30%, #381227 75%, #2d0a21 100%);
+    background: radial-gradient(circle, #644f2f 30%, #381227 75%, #2d0a21 100%);
+    mix-blend-mode: screen;
+    opacity: 0.9;
+}
+
+.filter--toaster::after {
+    background: -webkit-radial-gradient(center, #644f2f 30%, rgb(57, 5, 5) 85%, rgb(35, 8, 8) 100%);
+    background: radial-gradient(center, #644f2f 30%, rgb(57, 5, 5) 85%, rgb(35, 8, 8) 100%);
+    mix-blend-mode: lighten;
+    opacity: 0.5;
+}
+
+/* MAYFAIR */
+
+.filter--mayfair {
+    -webkit-filter: brightness(1.2) contrast(1.1) saturate(110%);
+    filter: brightness(1.2) contrast(1.1) saturate(110%);
+}
+
+.filter--mayfair::before {
+    background: -webkit-radial-gradient(circle, rgba(247, 222, 186, 0.7), rgba(130, 54, 100, 0.5), rgb(11, 10, 17) 80%);
+    background: radial-gradient(circle, rgba(247, 222, 186, 0.7), rgba(130, 54, 100, 0.5), rgb(11, 10, 17) 80%);
+    mix-blend-mode: overlay;
+    opacity: 0.5;
+}
+
+.filter--mayfair::after {
+    background: #460B2A;
+    mix-blend-mode: overlay;
+    opacity: 0.1;
+}
+
+/* SIERRA */
+
+.filter--sierra {
+    filter: brightness(0.9) contrast(0.9) saturate(90%);
+}
+
+.filter--sierra::before {
+    background: radial-gradient(circle, rgba(246, 219, 164, 0.7), #221451 80%);
+    mix-blend-mode: soft-light;
+    opacity: 0.6;
+}
+
+.filter--sierra::after {
+    background: radial-gradient(circle, rgba(247, 183, 164, 0.8) 35%, rgba(229, 236, 181, 0.6), rgba(133, 125, 122, 0.5) 80%);
+    mix-blend-mode: overlay;
+    opacity: 0.8;
+}
+
+/* X PRO II */
 
 .filter--xproii {
+    -webkit-filter: brightness(1.1) saturate(130%) sepia(0.2);
     filter: brightness(1.1) saturate(130%) sepia(0.2);
 }
 
@@ -133,25 +213,30 @@
 }
 
 .filter--xproii::after {
-    background: -webkit-radial-gradient(circle, #E6E7E0 40%, rgba(43, 42, 161, 0.6) 110%);
-    background: radial-gradient(circle, #E6E7E0 40%, rgba(43, 42, 161, 0.6) 110%);
+    background: -webkit-radial-gradient(circle, transparent 25%, #190033 95%);
+    background: radial-gradient(circle, transparent 25%, #190033 95%);
     mix-blend-mode: color-burn;
+    opacity: 0.7;
 }
 
 /* RISE */
 
 .filter--rise {
+    -webkit-filter: brightness(1.2) contrast(0.9) saturate(90%);
     filter: brightness(1.2) contrast(0.9) saturate(90%);
 }
 
 .filter--rise::before {
-    background: #C9B75C;
-    mix-blend-mode: screen;
-    opacity: 0.2;
+    background: -webkit-radial-gradient(circle, rgba(236, 205, 169, 0.2) 55%, #321E07 100%);
+    background: radial-gradient(circle, rgba(236, 205, 169, 0.2) 55%, #321E07 100%);
+    mix-blend-mode: multiply;
+    opacity: 0.8;
 }
 
 .filter--rise::after {
-    background: radial-gradient(circle, transparent 35%, #15081A 100%);
-    mix-blend-mode: hard-light;
-    opacity: 0.9;
+    /* background: -webkit-radial-gradient(circle, rgba(246, 157, 60, 0.8), transparent 100%); */
+    background: radial-gradient(circle, rgba(232, 197, 152, 0.8), transparent 100%);
+    mix-blend-mode: overlay;
+    opacity: 0.6;
 }
+
