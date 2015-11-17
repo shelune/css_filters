@@ -189,15 +189,13 @@
 }
 
 .filter--sierra::before {
-    background: -webkit-radial-gradient(circle, rgba(246, 219, 164, 0.7), #221451 80%);
-    background: radial-gradient(circle, rgba(246, 219, 164, 0.7), #221451 80%);
+    background: radial-gradient(circle, rgba(246, 219, 164, 0.7), rgba(34, 20, 81, 0.8) 80%);
     mix-blend-mode: soft-light;
-    opacity: 0.6;
+    opacity: 0.7;
 }
 
 .filter--sierra::after {
-    background: -webkit-radial-gradient(circle, rgba(247, 183, 164, 0.8) 35%, rgba(229, 236, 181, 0.6), rgba(133, 125, 122, 0.5) 80%);
-    background: radial-gradient(circle, rgba(247, 183, 164, 0.8) 35%, rgba(229, 236, 181, 0.6), rgba(133, 125, 122, 0.5) 80%);
+    background: radial-gradient(circle at 60% 60%, rgba(230, 197, 164, 0.8) 35%, rgba(178, 154, 186, 0.6), rgba(10, 40, 102, 0.5) 80%);
     mix-blend-mode: overlay;
     opacity: 0.8;
 }
@@ -284,3 +282,20 @@
     opacity: 0.4;
 }
 
+/* HEFE */
+
+.filter--hefe {
+    -webkit-filter: brightness(1.1) contrast(1.1) sepia(.1) saturate(1.15);
+    filter: brightness(1.1) contrast(1.1) sepia(.1) saturate(1.15);
+
+}
+
+.filter--hefe::before {
+    background: rgba(67, 45, 31, .7);
+    mix-blend-mode: overlay;
+    box-shadow: inset -5px 5px 20px rgba(21, 12, 0, .7);
+}
+
+.filter--hefe::after {
+    box-shadow: inset 5px -5px 20px rgba(21, 12, 0, .7);
+}
