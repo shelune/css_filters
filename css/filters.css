@@ -282,6 +282,24 @@
     opacity: 0.4;
 }
 
+/* KELVIN */
+
+.filter--kelvin {
+    -webkit-filter: brightness(1.3) saturate(.9) contrast(1.1);
+    filter: brightness(1.3) saturate(.9);
+}
+
+.filter--kelvin::before {
+    background: rgba(114, 79, 33, .8);
+    mix-blend-mode: overlay;
+}
+
+.filter--kelvin::after {
+    background: radial-gradient(circle, rgba(245, 202, 117, .35) 25%, rgba(127, 104, 15, .75) 76%, rgba(44, 78, 17, .8) 100%);
+    mix-blend-mode: overlay;
+}
+
+
 /* HEFE */
 
 .filter--hefe {
