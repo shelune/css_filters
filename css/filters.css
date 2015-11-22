@@ -311,9 +311,27 @@
 .filter--hefe::before {
     background: rgba(67, 45, 31, .7);
     mix-blend-mode: overlay;
-    box-shadow: inset -5px 5px 20px rgba(21, 12, 0, .7);
+    box-shadow: inset -.3rem .3rem 20px rgba(21, 12, 0, .7);
 }
 
 .filter--hefe::after {
-    box-shadow: inset 5px -5px 20px rgba(21, 12, 0, .7);
+    box-shadow: inset .3rem -.3rem 20px rgba(21, 12, 0, .7);
+}
+
+
+/* SLUMBER */
+
+.filter--slumber {
+    -webkit-filter: saturate(.9) brightness(.85);
+    filter: saturate(.9);
+}
+
+.filter--slumber::after {
+    background: rgba(90, 67, 21, .9);
+    mix-blend-mode: soft-light;
+}
+
+.filter--slumber::before {
+    background: rgba(90, 49, 22, .2);
+    mix-blend-mode: screen;
 }
