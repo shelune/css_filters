@@ -323,11 +323,11 @@
 
 .filter--slumber {
     -webkit-filter: saturate(.9) brightness(.85);
-    filter: saturate(.9);
+    filter: saturate(.9) brightness(.85);
 }
 
 .filter--slumber::after {
-    background: rgba(90, 67, 21, .9);
+    background: rgba(82, 59, 11, .5);
     mix-blend-mode: soft-light;
 }
 
