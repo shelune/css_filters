@@ -318,6 +318,39 @@
     box-shadow: inset .3rem -.3rem 20px rgba(21, 12, 0, .7);
 }
 
+/* HEFE */
+
+.filter--crema {
+    -webkit-filter: brightness(0.9) saturate(1.05) contrast(1.1) hue-rotate(10deg);
+    filter: brightness(0.9) saturate(1.05) contrast(1.1) hue-rotate(10deg);
+}
+
+.filter--crema::after {
+    background: rgba(33, 1, 49, .35);
+    mix-blend-mode: soft-light;
+}
+
+.filter--crema::before {
+    background: rgba(31, 13, 38, .1);
+    mix-blend-mode: color;
+}
+
+/* BRANNAN */
+
+.filter--brannan {
+    -webkit-filter: brightness(1.1) contrast(1.05) saturate(1.1);
+    filter: brightness(1.1) contrast(1.05) saturate(1.1);
+}
+
+.filter--brannan::after {
+    background: rgba(67, 4, 52, .7);
+    mix-blend-mode: overlay;
+}
+
+.filter--brannan::before {
+    background: rgba(40, 0, 31, .1);
+    mix-blend-mode: color;
+}
 
 /* SLUMBER */
 
@@ -327,11 +360,11 @@
 }
 
 .filter--slumber::after {
-    background: rgba(82, 59, 11, .5);
-    mix-blend-mode: soft-light;
+    background: rgba(70, 50, 5, .65);
+    mix-blend-mode: overlay;
 }
 
 .filter--slumber::before {
-    background: rgba(90, 49, 22, .2);
+    background: rgba(90, 49, 22, .25);
     mix-blend-mode: screen;
 }
